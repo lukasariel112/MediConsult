@@ -1,0 +1,32 @@
+appointment-system/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── db.ts       # Configuração da conexão com o MariaDB
+│   │   ├── controllers/
+│   │   │   └── appointmentController.ts # Lógica para agendamento
+│   │   ├── models/
+│   │   │   └── appointmentModel.ts   # Modelos e esquemas do MariaDB
+│   │   ├── routes/
+│   │   │   └── appointmentRoutes.ts # Rotas de API
+│   │   ├── services/
+│   │   │   └── appointmentService.ts # Lógica de negócio
+│   │   └── app.ts      # Configuração do servidor Express
+│   ├── package.json
+│   └── tsconfig.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AppointmentForm.tsx # Formulário de agendamento
+│   │   │   └── AppointmentList.tsx # Lista de consultas agendadas
+│   │   ├── pages/
+│   │   │   └── HomePage.tsx  # Página principal
+│   │   ├── styles/
+│   │   │   └── main.css      # Estilos globais
+│   │   ├── App.tsx          # Componente raiz do React
+│   │   ├── index.tsx        # Entrada da aplicação React
+│   ├── package.json
+│   └── tsconfig.json
+└── README.md
+
