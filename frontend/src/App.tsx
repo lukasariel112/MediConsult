@@ -1,14 +1,17 @@
-import React from 'react';
-import HomePage from './pages/HomePage';
-import './styles/main.css';
-import Login from './components/Login';
 
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './pages/MainPages'; // Sua tela principal existente
+import LoginPage from './pages/loginPage'; // Tela de login
 
 const App: React.FC = () => {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 };
 
